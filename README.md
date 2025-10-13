@@ -4,6 +4,22 @@ Coders Gym is an unofficial client for LeetCode, built with Flutter. It allows y
 
 ![Google Pixel 3 XL Presentation_compreesed](https://github.com/user-attachments/assets/283c4010-bb11-48f5-9c12-de19437bfef8)
 
+> ⚠️ **Project Maintenance Notice**
+
+Hi everyone 👋  
+I wanted to share that **CodersGym** is currently **no longer being actively maintained**.  
+Due to some personal reasons, I no longer have enough time to continue regular development and updates.
+
+The app has grown wonderfully with the support of the community, and I’d love to see it continue to evolve.  
+If you’re passionate about coding, learning, and open source, consider contributing or taking over as a maintainer.
+
+If you’d like to help:
+- Fork the repository and start contributing.
+- Or open an issue expressing your interest in maintaining the project.
+
+Thank you all for your amazing support — it’s been an incredible journey! 💛  
+— *Gourav Sharma*
+
 ## 🚀 Features
 
 Features of Coders Gym
