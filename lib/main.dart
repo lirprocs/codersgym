@@ -14,8 +14,9 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(!kDebugMode);
-  FirebaseAnalytics.instance.setAnalyticsCollectionEnabled(!kDebugMode);
+  // This fork reuses upstream's Firebase project, so don't send it any data.
+  FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(false);
+  FirebaseAnalytics.instance.setAnalyticsCollectionEnabled(false);
   // Pass all uncaught "fatal" errors from the framework to Crashlytics
   FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
 

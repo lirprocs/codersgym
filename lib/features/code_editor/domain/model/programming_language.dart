@@ -5,6 +5,7 @@ import 'package:highlight/languages/python.dart';
 import 'package:highlight/languages/cs.dart';
 import 'package:highlight/languages/kotlin.dart';
 import 'package:highlight/languages/javascript.dart';
+import 'package:highlight/languages/go.dart';
 
 enum ProgrammingLanguage {
   c,
@@ -15,6 +16,7 @@ enum ProgrammingLanguage {
   csharp,
   kotlin,
   javascript,
+  golang,
 }
 
 extension ProgrammingLanguageExt on ProgrammingLanguage {
@@ -28,6 +30,7 @@ extension ProgrammingLanguageExt on ProgrammingLanguage {
       ProgrammingLanguage.csharp => cs,
       ProgrammingLanguage.kotlin => kotlin,
       ProgrammingLanguage.javascript => javascript,
+      ProgrammingLanguage.golang => go,
     };
   }
 
@@ -49,10 +52,12 @@ extension ProgrammingLanguageExt on ProgrammingLanguage {
         return 'Kotlin';
       case ProgrammingLanguage.javascript:
         return 'Javascript';
+      case ProgrammingLanguage.golang:
+        return 'Go';
     }
   }
 
-  /* 
+  /*
   {
     "c": "c",
     "cpp": "cpp",
@@ -81,6 +86,8 @@ extension ProgrammingLanguageExt on ProgrammingLanguage {
         return 'kotlin';
       case ProgrammingLanguage.javascript:
         return 'Javascript';
+      case ProgrammingLanguage.golang:
+        return 'go';
     }
   }
 }
@@ -90,4 +97,6 @@ final List<ProgrammingLanguage> formatUnSupportedLanguages = [
   ProgrammingLanguage.csharp,
   ProgrammingLanguage.kotlin,
   ProgrammingLanguage.javascript,
+  // Go formatting endpoint is not verified yet; disable to avoid a broken Format action.
+  ProgrammingLanguage.golang,
 ];

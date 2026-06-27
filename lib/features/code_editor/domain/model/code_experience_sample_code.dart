@@ -55,6 +55,11 @@ var twoSum = function(s, k) {
     // Implementation here
     return false;
 };""";
+      case ProgrammingLanguage.golang:
+        return """func twoSum(s string, k int) bool {
+    // Implementation here
+    return false
+}""";
     }
   }
 }
